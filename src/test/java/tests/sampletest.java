@@ -7,7 +7,7 @@ public class sampletest
 	@Test
 	public void method()
 	{
-		System.out.println("Hi");
+		System.out.println("Hi swetha");
 	}
 
 }
