@@ -37,12 +37,12 @@ public class AmazonOtpautomation
 		driver.findElement(By.className("a-dropdown-prompt")).click();
 		Thread.sleep(5000);
 		driver.findElement(By.linkText("United States +1")).click();////iframe[contains(@title,'notification-frame')
-		driver.findElement(By.id("ap_phone_number")).sendKeys("4049486555");
+		driver.findElement(By.id("ap_phone_number")).sendKeys("");
 		driver.findElement(By.name("password")).sendKeys("Ressha");
 		driver.findElement(By.id("continue")).click();
 		Thread.sleep(50000);
-		String suid="ACa5ae9f83835dc30173012e6588b69a1c";
-		String auth="d18826fa0ae4df3c9235ea5b47d188ad";
+		String suid="";
+		String auth="";
 		Twilio.init(suid,auth);
 		ResourceSet<Message> ms=Message.reader().read();
 		String temp=ms.iterator().next().getBody();
