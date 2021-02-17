@@ -12,8 +12,8 @@ public class Test1
 	public void method()
 	{
 		//connet Twilio cloud for sms service
-		String asid="ACa5ae9f83835dc30173012e6588b69a1c";
-		String auth="d18826fa0ae4df3c9235ea5b47d188ad";
+		String asid="";
+		String auth="";
 		Twilio.init(asid, auth);
 		ResourceSet<Message> msgs=Message.reader().read();
 		for(Message record:msgs)
